@@ -12,7 +12,7 @@ public class Navbar : MonoBehaviour
     [SerializeField] private float cursorMoveTime; // seconds for cursor to move to destination
     private int currentIndex;
     [SerializeField] private VideoPlayer videoPlayer;
-    [SerializeField] private TextMeshProUGUI yapTextField;
+    [SerializeField] private YapGradualText yapTextField;
     [SerializeField] private TextMeshProUGUI titleTextField;
     [SerializeField] private TextMeshProUGUI toolsTextField;
     [SerializeField] private RectTransform cursorTransform;
@@ -98,7 +98,7 @@ public class Navbar : MonoBehaviour
     {
         videoPlayer.clip = currentList.entries[currentIndex].video;
         videoPlayer.transform.parent.gameObject.SetActive(videoPlayer.clip != null);
-        yapTextField.text = currentList.entries[currentIndex].yapText;
+        yapTextField.SetText(currentList.entries[currentIndex].yapText);
         toolsTextField.text = currentList.entries[currentIndex].toolsText;
         titleTextField.text = currentList.entries[currentIndex].titleText;
     }

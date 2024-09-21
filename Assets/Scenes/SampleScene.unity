@@ -432,6 +432,7 @@ Transform:
   m_Children:
   - {fileID: 1675483587}
   - {fileID: 1777890726}
+  - {fileID: 2097465179}
   - {fileID: 2127473342}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -471,7 +472,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 218, y: 0}
   m_SizeDelta: {x: 1064, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &311912648
@@ -2055,7 +2056,7 @@ MonoBehaviour:
   pxSpace: -200
   cursorMoveTime: 0.3
   videoPlayer: {fileID: 1706931779}
-  yapTextField: {fileID: 1111538447}
+  yapTextField: {fileID: 1111538449}
   titleTextField: {fileID: 1056977073}
   toolsTextField: {fileID: 2026507872}
   cursorTransform: {fileID: 991319944}
@@ -2073,6 +2074,7 @@ GameObject:
   - component: {fileID: 1111538446}
   - component: {fileID: 1111538448}
   - component: {fileID: 1111538447}
+  - component: {fileID: 1111538449}
   m_Layer: 0
   m_Name: Yap
   m_TagString: Untagged
@@ -2119,9 +2121,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hey guys, did you know that in terms of male human and female Pok\xE9mon
-    breeding, Vaporeon is the most compatible Pok\xE9mon for humans? Not only are
-    they in the field egg group, which is mostly comprised etting sore. "
+  m_text: REMOVED THIS FROM SOURCE LMAO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2198,6 +2198,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111538445}
   m_CullTransparentMesh: 1
+--- !u!114 &1111538449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111538445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e2e974e04dd71d4bbf20f31c19adfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsBetweenChars: 0.01
+  secondsBetweenCursorBlink: 0.5
+  textField: {fileID: 1111538447}
+  audioSource: {fileID: 2097465180}
 --- !u!224 &1125029861 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
@@ -2239,6 +2255,144 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1152940728
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1696749297}
+    m_Modifications:
+    - target: {fileID: 3350432190769640491, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_Name
+      value: Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 5831285925629390084, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225027554925274291, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 105
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -320
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 369.70004
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017781984758093831, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8342701211962723996, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2130747305}
+    - target: {fileID: 9177915363104580679, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_text
+      value: JungsGalaxy.os
+      objectReference: {fileID: 0}
+    - target: {fileID: 9177915363104580679, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: e24334f4b202b6d44aec3d24b1a9cb50, type: 2}
+    - target: {fileID: 9177915363104580679, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9177915363104580679, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6691807982405483723, guid: e24334f4b202b6d44aec3d24b1a9cb50, type: 2}
+    - target: {fileID: 9177915363104580679, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+--- !u!224 &1152940729 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7814156989446128098, guid: 576c7cea7dcddac479f9b8d585f2ce6f, type: 3}
+  m_PrefabInstance: {fileID: 1152940728}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1217586495
 GameObject:
   m_ObjectHideFlags: 0
@@ -7777,6 +7931,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1696749296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1696749297}
+  m_Layer: 0
+  m_Name: OS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1696749297
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696749296}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1152940729}
+  m_Father: {fileID: 2085458221}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1064, y: 800}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1706931778
 GameObject:
   m_ObjectHideFlags: 0
@@ -8770,6 +8960,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 215266457}
+  - {fileID: 1696749297}
   - {fileID: 2015999095}
   - {fileID: 1089128089}
   - {fileID: 2026507871}
@@ -8800,6 +8991,135 @@ MonoBehaviour:
   audioSource: {fileID: 2127473343}
   openMenuSound: {fileID: 8300000, guid: 2a2a2dd7aa738674287d858014f25d71, type: 3}
   closeMenuSound: {fileID: 8300000, guid: bc47cfa1363dd944986fac341c1248c0, type: 3}
+  typing: {fileID: 2097465180}
+--- !u!1 &2097465178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097465179}
+  - component: {fileID: 2097465180}
+  m_Layer: 0
+  m_Name: Typing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2097465179
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097465178}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 133161078}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2097465180
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097465178}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0a4284b82913a544ca252db6863e7a8a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.6
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2127473341
 GameObject:
   m_ObjectHideFlags: 0
@@ -9033,8 +9353,7 @@ MonoBehaviour:
       yapText: 'This project really puts the "relational" in "relational databases"
         for me. Forcing myself to avoid using lists as fields in this project was
         painful, but taught me a lot about the nature of relational databases and
-        the primary rules each table should follow. <br>Video coming soon<br><br>Status:
-        In development'
+        the primary rules each table should follow. <br><br>Status: In development'
       toolsText: PostgreSQL, Python
   - entries:
     - titleText: WIP!
@@ -9055,12 +9374,11 @@ MonoBehaviour:
     - titleText: For Fun
       video: {fileID: 32900000, guid: ea06429509e72b247b2dccb279cf3c9d, type: 3}
       yapText: In my free time, I usually play games with my friends or make music.
-        This gets a little meta, but I also develop games a lot, often for game jams
-        that my friends are participating in or simply a burning proof-of-concept
-        prototype idea my friend wants to get done.<br><br>I think people work best
-        together, and I'm happy to help with things that I'm good at, or learn things
-        that I'm not good at!<br><br>I also have a lackluster music career and participate
-        in an acapella group at my college.
+        I also develop games a lot, often for game jams that my friends are participating
+        in or burning proof-of-concept prototype ideas my friends want to get done.<br><br>I
+        think people work best together, and I'm happy to help with things that I'm
+        good at, or learn things that I'm not good at!<br><br>I also have a lackluster
+        music career and participate in an acapella group at my college.
       toolsText: Friendship, Laughter, Ableton, Unity, Joy
   navbar: {fileID: 1089128090}
   audioSource: {fileID: 2127473343}

@@ -17,11 +17,13 @@ public class MenuController : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip openMenuSound;
     [SerializeField] private AudioClip closeMenuSound;
+    [SerializeField] private AudioSource typing;
 
     void Start()
     {
         rotating = false;
         startRotation = 0f;
+        typing.volume = 0f;
     }
 
     void Update()
@@ -44,6 +46,7 @@ public class MenuController : MonoBehaviour
         rotating = true;
         targetRotation = 0f;
         audioSource.PlayOneShot(openMenuSound);
+        typing.volume = 0.6f;
         videoPlayer.Play();
     }
 
@@ -54,6 +57,7 @@ public class MenuController : MonoBehaviour
         rotating = true;
         targetRotation = 90f;
         audioSource.PlayOneShot(closeMenuSound);
+        typing.volume = 0f;
         videoPlayer.Pause();
     }
 }
