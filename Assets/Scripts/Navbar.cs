@@ -96,8 +96,10 @@ public class Navbar : MonoBehaviour
     // using currentindex, set the value of all the display fields
     void RefreshNavbar()
     {
-        videoPlayer.clip = currentList.entries[currentIndex].video;
-        videoPlayer.transform.parent.gameObject.SetActive(videoPlayer.clip != null);
+        videoPlayer.transform.parent.gameObject.SetActive(currentList.entries[currentIndex].videoUrl.Length > 0);
+        videoPlayer.url = Application.streamingAssetsPath + "/" + currentList.entries[currentIndex].videoUrl;
+        // Debug.Log(Application.streamingAssetsPath + "/" + currentList.entries[currentIndex].videoUrl);
+
         yapTextField.SetText(currentList.entries[currentIndex].yapText);
         toolsTextField.text = currentList.entries[currentIndex].toolsText;
         titleTextField.text = currentList.entries[currentIndex].titleText;

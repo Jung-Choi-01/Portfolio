@@ -65,7 +65,7 @@ public class PlanetHolder : MonoBehaviour
 public class PortfolioEntry // class, not struct, because you can't serialize structs
 {
     public string titleText;
-    public VideoClip video;
+    public string videoUrl;
     public string yapText;
     public string toolsText;
 }
