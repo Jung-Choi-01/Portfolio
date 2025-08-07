@@ -8242,7 +8242,7 @@ VideoPlayer:
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
-  m_SkipOnDrop: 1
+  m_SkipOnDrop: 0
   m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
@@ -9435,7 +9435,7 @@ MonoBehaviour:
   entryLists:
   - entries:
     - titleText: Fruit Ninja VR
-      videoUrl: fruit_ninja_vr.mp4
+      videoUrl: output_fruit_ninja_vr.mp4
       yapText: 'I wanted a VRChat game that could be played at a semi-competitive
         level, with unique mechanics to explore and different strategies for players
         to use, so I made a port of Fruit Ninja with a few added mechanics like slowing
@@ -9446,7 +9446,7 @@ MonoBehaviour:
         base NetworkObject.<br><br>Status: In development'
       toolsText: UdonSharp, VRChat SDK, Unity
     - titleText: Fishing Cenote VR
-      videoUrl: fishing cenote vr.mp4
+      videoUrl: output_fishing cenote vr.mp4
       yapText: 'As a change of pace from Fruit Ninja, I wanted to make a more atmospheric
         chatting world. Inspired by some photos of my friend''s vacation, I made
         a Cenote where players can fish and tell stories by the campfire.<br><br>I
@@ -9456,7 +9456,7 @@ MonoBehaviour:
         In development'
       toolsText: UdonSharp, VRChat SDK, Unity
     - titleText: Lighthouse
-      videoUrl: lighthouse.mp4
+      videoUrl: output_lighthouse.mp4
       yapText: 'A friend invited me to participate in the 1-BIT Game Jam, which challenges
         designers to make games with only two colors in them. We decided to make
         Light On Your Feet, a platformer stealth game where moving too abruptly could
@@ -9464,9 +9464,52 @@ MonoBehaviour:
         side of 2D Unity, like Sprite Masks, Particles, and 3D Lights in 2D space.<br><br>Status:
         Completed'
       toolsText: Unity (Splines, Sprites, Lights, Particle Systems)
+    - titleText: Team Training VR (IK Robot)
+      videoUrl: output_IK_robot.mp4
+      yapText: 'Inspired by Rain World''s extensive use of inverse kinematics for
+        animation, I wanted to explore the possible uses of this in a VR game world.
+        I came up with Team Training, a series of puzzles designed to frustrate--
+        I mean, build cooperation skills with, you and your teammates. This robot
+        serves as a finicky transportation device that you and your teammates have
+        to closely coordinate each other''s movements in order to navigate properly.<br><br>This
+        project was a great way for me to de-mystify the concept of inverse kinematics
+        and the math behind it. I''m quite proud of the result I ended up with!<br><br>Status:
+        In development'
+      toolsText: UdonSharp, VRChat SDK, Unity, FastIK
+    - titleText: PPT Karaoke VR (Projector)
+      videoUrl: output_projector.mp4
+      yapText: 'When brainstorming more party-game-ish ideas for VRChat game worlds,
+        I relized that the popular in-person party game, PowerPoint Karaoke, would
+        be even better in VR thanks to the possible increased expressiveness that
+        one can achieve through virtual avatars.<br><br>A key aspect of that vision
+        would be the immersiveness of a projector system, to really sell the "dumb
+        corporate office" atmosphere. This is a real-time projector system I made
+        using ShaderGraphs and CustomRenderTextures to mimic a projector displaying
+        different images, complete with hard shadows.<br><br>Status: In development'
+      toolsText: UdonSharp, VRChat SDK, Unity
+    - titleText: String Lights VR Editor Util
+      videoUrl: output_string_lights.mp4
+      yapText: 'A common category many VRChat worlds fall under is cozy chill vibe
+        worlds, where you can just sit around in a nice atmosphere and talk to your
+        friends. When thinking of unique vibes to bring to the table, I often find
+        myself caught up on the principle that I didn''t know how to create string
+        lights, a very common prop used for their cozy light emittance and fun silhouettes
+        they can create. That brought me to making this quick tool, which allows
+        me to easily create string lights using LineRenderers and parabola math straight
+        from the editor.<br><br>Status: Finished'
+      toolsText: UdonSharp, VRChat SDK, Unity
+    - titleText: Unity AI Agents Pool
+      videoUrl: output_ai_agents.mp4
+      yapText: 'I saw a few videos about AI playing tag against itself and developing
+        new strategies that broke the game, so I thought it''d be fun to see what
+        an agent does when given pool. While I didn''t get super far with the performance
+        of the model itself, it was a great way to expose myself to reinforcement
+        learning and get used to the different statistical measures used to measure
+        a model''s performance.<br><br>Status: Finished'
+      toolsText: Unity ML Agents
   - entries:
     - titleText: U-Fund Website
-      videoUrl: web1.mp4
+      videoUrl: output_web1.mp4
       yapText: 'Complete with sprints and AGILE methodology, SWEN-261 put me in the
         perspective of a full-stack developer working to create a website for a client.
         We took a project statement and turned it into a domain model complete with
@@ -9478,7 +9521,7 @@ MonoBehaviour:
         Complete'
       toolsText: SpringBoot (Java), Angular (html)
     - titleText: Chat Database
-      videoUrl: chat.mp4
+      videoUrl: output_chat.mp4
       yapText: 'This project really puts the "relational" in "relational databases"
         for me. Forcing myself to avoid using lists as fields in this project was
         painful, but taught me a lot about the nature of relational databases and
@@ -9486,7 +9529,7 @@ MonoBehaviour:
       toolsText: PostgreSQL, Python
   - entries:
     - titleText: Light Controller
-      videoUrl: embedded.mp4
+      videoUrl: output_embedded.mp4
       yapText: 'In my embedded software class, we built a quick statemachine for
         different lights blinking on a Cortex M4. The program takes terminal input
         and translates it into state changes, which are read by a tick system to
@@ -9497,7 +9540,7 @@ MonoBehaviour:
       toolsText: STM32CubeIDE, GDB, Various electronic components
   - entries:
     - titleText: For Work
-      videoUrl: programming.mp4
+      videoUrl: output_programming.mp4
       yapText: The majority of what I do in a day as a Software Engineering major
         at RIT is software design and version control, sprinkled with a little bit
         of programming. Most of the work is for my classes, but now and then I get
@@ -9507,7 +9550,7 @@ MonoBehaviour:
         software or develop games professionally.
       toolsText: Brain, Keyboard, and a Good Breakfast
     - titleText: For Fun
-      videoUrl: forfun.mp4
+      videoUrl: output_forfun.mp4
       yapText: In my free time, I usually play games with my friends or make music.
         I also develop games a lot, often for game jams that my friends are participating
         in or burning proof-of-concept prototype ideas my friends want to get done.<br><br>I
