@@ -7,16 +7,20 @@ public class CameraStartMove : MonoBehaviour
     [SerializeField] private float cameraMoveTime;
     [SerializeField] private float cameraMoveDistance;
     [SerializeField] private MenuController menuController;
+    [SerializeField] private RocketShip rocketShip;
+    [SerializeField] private EffectManager cameraShake;
     private bool moving;
     private Vector3 targetPosition;
     private Vector3 startPosition;
 
-    void Start()
+    public void CameraStartMoving()
     {
         moving = true;
         targetPosition = transform.position;
         transform.position = transform.position + -1f * cameraMoveDistance * transform.forward;
         startPosition = transform.position;
+        rocketShip.BeginFlying();
+        cameraShake.StartShake(cameraMoveTime);
     }
 
     void Update()
