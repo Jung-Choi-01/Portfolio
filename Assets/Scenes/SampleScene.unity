@@ -15476,7 +15476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d96fc5443f1c3e4889460372611caf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMoveTime: 2
+  cameraMoveTime: 4
   cameraMoveDistance: 1000
   menuController: {fileID: 2085458222}
   rocketShip: {fileID: 3469287837874081456}
@@ -18844,8 +18844,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 15
-  turnSpeed: 0.5
-  extraForwardSpeed: 4
+  turnSpeed: 0.2
+  extraForwardSpeed: 8
   rocketFlames: {fileID: 840428226}
 --- !u!33 &3469287838398696881
 MeshFilter:
