@@ -17,10 +17,14 @@ public class CameraStartMove : MonoBehaviour
     {
         moving = true;
         targetPosition = transform.position;
-        transform.position = transform.position + -1f * cameraMoveDistance * transform.forward;
         startPosition = transform.position;
         rocketShip.BeginFlying();
         cameraShake.StartShake(cameraMoveTime);
+    }
+
+    void Start()
+    {
+        transform.position -= transform.forward * cameraMoveDistance;
     }
 
     void Update()

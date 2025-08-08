@@ -1,25 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class EffectManager : MonoBehaviour
 {
+    [Header("camera shake")]
     [SerializeField] private float cameraShakeInterval;
     [SerializeField] private float cameraShakeMax;
     [SerializeField] private AnimationCurve effectCurve;
 
+    [Header("sfx volume")]
     [SerializeField] private float audioMax;
     [SerializeField] private AudioSource[] audioSources;
+
+    [Header("sfx distortion")]
+    [SerializeField] private AudioMixer mixer;
     [SerializeField] private float distortionMax;
-    private AudioDistortionFilter audioDistortionFilter;
     private float effectTime;
     private bool started;
     private float timeStarted;
-
-    void Awake()
-    {
-        audioDistortionFilter = GetComponent<AudioDistortionFilter>();
-    }
 
     public void StartShake(float duration)
     {
@@ -35,7 +35,7 @@ public class EffectManager : MonoBehaviour
         foreach (AudioSource source in audioSources)
         {
             source.volume = effectCurve.Evaluate((Time.time - timeStarted) / effectTime) * audioMax + 0.108f;
-            audioDistortionFilter.distortionLevel = effectCurve.Evaluate((Time.time - timeStarted) / effectTime) * distortionMax;
+            mixer.SetFloat("SFXDistortion", effectCurve.Evaluate((Time.time - timeStarted) / effectTime) * distortionMax);
         }
 
         if (Time.time - timeStarted > effectTime)
