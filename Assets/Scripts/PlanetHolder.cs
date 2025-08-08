@@ -19,6 +19,7 @@ public class PlanetHolder : MonoBehaviour
     // navbar control stuff
     [SerializeField] private PortfolioEntryList[] entryLists;
     [SerializeField] private Navbar navbar;
+    [SerializeField] private HeaderUnderliner initialHeader;
 
     [Header("Sound")]
     [SerializeField] private AudioSource audioSource;
@@ -30,6 +31,7 @@ public class PlanetHolder : MonoBehaviour
         targetRotation = 0f;
         rotating = false;
         navbar.SetCurrentList(entryLists[currentTarget]);
+        initialHeader.SetHighlight(0);
     }
 
     void Update()
