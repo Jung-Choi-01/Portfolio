@@ -48,26 +48,6 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
---- !u!244 &-2191738076176236255
-AudioMixerEffectController:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_EffectID: 9f71262580952d64590c3fa9ea556b52
-  m_EffectName: Normalize
-  m_MixLevel: dc1d0709fe4913b4b92f117a94721172
-  m_Parameters:
-  - m_ParameterName: Fade in time
-    m_GUID: 6d55ac9e85ba04349acac4e9661cf2f7
-  - m_ParameterName: Lowest volume
-    m_GUID: 1b6816533ef34ef42aacf315e42fe9c9
-  - m_ParameterName: Maximum amp
-    m_GUID: f1573100a4d6d1e43b0a5c0225f6555b
-  m_SendTarget: {fileID: 0}
-  m_EnableWetMix: 0
-  m_Bypass: 0
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -84,6 +64,8 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters:
+  - guid: da28ad3a035853f43b05774631520365
+    name: MasterVolume
   - guid: b0d6e71e11dfa2f46a6791e9fb44058d
     name: SFXVolume
   - guid: 4d76382abcee5e14d867afd1f3bf1342
@@ -147,24 +129,6 @@ AudioMixerSnapshotController:
     84feddf74849dfa41b74db345cd62f20: 100
     4d76382abcee5e14d867afd1f3bf1342: 0
   m_TransitionOverrides: {}
---- !u!244 &124670116315837188
-AudioMixerEffectController:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_EffectID: cd1c77b436816224f94ac78ea5fd4048
-  m_EffectName: Highpass
-  m_MixLevel: 8ec4fc7eadddd8f4e9bf24e2df86a58f
-  m_Parameters:
-  - m_ParameterName: Cutoff freq
-    m_GUID: 84feddf74849dfa41b74db345cd62f20
-  - m_ParameterName: Resonance
-    m_GUID: 1631ff09a1c458b4588621906970569a
-  m_SendTarget: {fileID: 0}
-  m_EnableWetMix: 0
-  m_Bypass: 0
 --- !u!244 &883587632990561486
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -196,8 +160,6 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: -5330305251156513893}
-  - {fileID: 124670116315837188}
-  - {fileID: -2191738076176236255}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0

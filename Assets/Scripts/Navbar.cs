@@ -17,6 +17,7 @@ public class Navbar : MonoBehaviour
     [SerializeField] private TextMeshProUGUI toolsTextField;
     [SerializeField] private RectTransform cursorTransform;
     [SerializeField] private GameObject dotPrefab;
+    [SerializeField] private VideoPauser pauser;
 
     private float firstDotPosition;
     private float targetCursorPosition;
@@ -77,20 +78,22 @@ public class Navbar : MonoBehaviour
     public void NavbarNext()
     {
         currentIndex += 1;
-        if(currentIndex >= currentList.entries.Count()) currentIndex = 0;
+        if (currentIndex >= currentList.entries.Count()) currentIndex = 0;
         audioSource.PlayOneShot(click);
         RefreshNavbar();
         AdjustCursorPosition();
         videoPlayer.Play();
+        pauser.SetIsPaused(false);
     }
     public void NavbarPrev()
     {
         currentIndex -= 1;
-        if(currentIndex < 0) currentIndex = currentList.entries.Count() - 1;
+        if (currentIndex < 0) currentIndex = currentList.entries.Count() - 1;
         audioSource.PlayOneShot(click);
         RefreshNavbar();
         AdjustCursorPosition();
         videoPlayer.Play();
+        pauser.SetIsPaused(false);
     }
 
     // using currentindex, set the value of all the display fields

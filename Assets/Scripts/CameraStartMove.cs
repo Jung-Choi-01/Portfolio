@@ -16,7 +16,7 @@ public class CameraStartMove : MonoBehaviour
     public void CameraStartMoving()
     {
         moving = true;
-        targetPosition = transform.position;
+        targetPosition = transform.position + cameraMoveDistance * transform.forward;
         startPosition = transform.position;
         rocketShip.BeginFlying();
         cameraShake.StartShake(cameraMoveTime);
