@@ -12,12 +12,14 @@ public class CameraStartMove : MonoBehaviour
     private bool moving;
     private Vector3 targetPosition;
     private Vector3 startPosition;
+    private float timeStarted;
 
     public void CameraStartMoving()
     {
         moving = true;
         targetPosition = transform.position + cameraMoveDistance * transform.forward;
         startPosition = transform.position;
+        timeStarted = Time.time;
         rocketShip.BeginFlying();
         cameraShake.StartShake(cameraMoveTime);
     }
@@ -30,7 +32,7 @@ public class CameraStartMove : MonoBehaviour
     void Update()
     {
         if(!moving) return;
-        float t = Time.time/cameraMoveTime;
+        float t = (Time.time-timeStarted)/cameraMoveTime;
         if(t > 1f)
         {
             transform.position = targetPosition;

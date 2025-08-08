@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 676622092390146586}
   - component: {fileID: 9177915363104580679}
   - component: {fileID: 8342701211962723996}
+  - component: {fileID: 2149387926498741728}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -379,3 +380,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2149387926498741728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220186710515929410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd89cbd1dedaa349a657189f3f54989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headers:
+  - {fileID: 9177915363104580679}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
